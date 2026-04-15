@@ -1,0 +1,11 @@
+{
+  "extends": "./packages/tsconfig.base.json",
+  "compilerOptions": {
+    // Path Alias
+    "paths": {
+      "#*": ["./packages/*"],
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src", ".prettierrc.mjs", "eslint.config.mjs"]
+}
