@@ -1,7 +1,5 @@
 import * as z from 'zod';
 
-export type Env = z.infer<typeof EnvSchema>;
-
 /**
  * Wraps a Zod schema to handle optional environment variables with a default value.
  * Empty strings (`''`) are treated as `undefined`, triggering the default value to be used instead.
@@ -22,3 +20,5 @@ const _optional = <S extends z.ZodType>(schema: S, def: z.core.util.NoUndefined<
 export const EnvSchema = z.object({
   NODE_ENV: z.enum(['development', 'production']),
 });
+
+export type Env = z.infer<typeof EnvSchema>;

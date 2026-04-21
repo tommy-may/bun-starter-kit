@@ -3,8 +3,7 @@
   "type": "module",
   "module": "src/index.ts",
   "imports": {
-    "#prettier-config": "./packages/prettier-config/index.js",
-    "#eslint-config": "./packages/eslint-config/index.js"
+    "#pkg/*": "./packages/*"
   },
   "scripts": {
     "start:dev": "bun --watch run src/index.ts",

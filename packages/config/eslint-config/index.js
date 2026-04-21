@@ -92,6 +92,7 @@ const perfectionistConfig = [
             'type-import',
             ['value-builtin', 'value-external'],
             'type-internal',
+            'value-internal-pkg',
             'value-internal',
             ['type-parent', 'type-sibling', 'type-index'],
             ['value-parent', 'value-sibling', 'value-index'],
@@ -102,6 +103,10 @@ const perfectionistConfig = [
             {
               groupName: 'react',
               elementNamePattern: ['^react$', '^react-.+'],
+            },
+            {
+              groupName: 'value-internal-pkg',
+              elementNamePattern: '^#pkg/.+',
             },
           ],
           environment: 'bun',
