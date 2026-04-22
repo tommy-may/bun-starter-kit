@@ -16,6 +16,20 @@ Install the project dependencies using bun:
 bun install
 ```
 
+### Git Hooks Setup (New Repository)
+
+If you are setting up a new repository, initialize Husky:
+
+```sh
+bunx husky init
+```
+
+Then edit the generated `.husky/pre-commit` file:
+
+```shell
+bunx lint-staged
+```
+
 ### Environment Variables
 
 Copy the file named `.env.example` and rename it `.env.development` in the root of your project and replace the placeholder values with yours.
