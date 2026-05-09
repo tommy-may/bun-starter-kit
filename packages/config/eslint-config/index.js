@@ -108,11 +108,11 @@ const perfectionistConfig = [
             {
               selector: 'type',
               groupName: 'type-internal-packages',
-              elementNamePattern: '^@packages/.+',
+              elementNamePattern: ['^#packages/.+', '^@packages/.+'],
             },
             {
               groupName: 'value-internal-packages',
-              elementNamePattern: '^@packages/.+',
+              elementNamePattern: ['^#packages/.+', '^@packages/.+'],
             },
           ],
           environment: 'bun',

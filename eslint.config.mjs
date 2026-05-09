@@ -1,4 +1,4 @@
-import { defineExtraConfig } from '@packages/config/eslint-config';
+import { defineExtraConfig } from '#packages/config/eslint-config/index.js';
 
 export default defineExtraConfig([
   {
