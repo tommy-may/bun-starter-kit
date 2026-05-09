@@ -1,0 +1,10 @@
+{
+  "name": "@packages/config",
+  "type": "module",
+  "exports": {
+    "./eslint-config": "./eslint-config/index.js",
+    "./prettier-config": "./prettier-config/index.js",
+    "./tsconfig": "./tsconfig.base.json"
+  },
+  "private": true
+}

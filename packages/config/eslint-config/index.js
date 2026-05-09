@@ -1,6 +1,6 @@
 /**
- * @typedef {import("@eslint/config-helpers").ConfigWithExtendsArray} ConfigWithExtendsArray
- * @typedef {import("@eslint/config-helpers").Config} Config
+ * @typedef {import("eslint/config").Config} Config
+ * @typedef {Parameters<typeof defineConfig>} ConfigWithExtendsArray
  */
 
 import js from '@eslint/js';
@@ -91,8 +91,9 @@ const perfectionistConfig = [
             'react',
             'type-import',
             ['value-builtin', 'value-external'],
+            'type-internal-packages',
+            'value-internal-packages',
             'type-internal',
-            'value-internal-pkg',
             'value-internal',
             ['type-parent', 'type-sibling', 'type-index'],
             ['value-parent', 'value-sibling', 'value-index'],
@@ -105,8 +106,13 @@ const perfectionistConfig = [
               elementNamePattern: ['^react$', '^react-.+'],
             },
             {
-              groupName: 'value-internal-pkg',
-              elementNamePattern: '^#pkg/.+',
+              selector: 'type',
+              groupName: 'type-internal-packages',
+              elementNamePattern: '^@packages/.+',
+            },
+            {
+              groupName: 'value-internal-packages',
+              elementNamePattern: '^@packages/.+',
             },
           ],
           environment: 'bun',

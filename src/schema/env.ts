@@ -10,9 +10,9 @@ import * as z from 'zod';
  *
  * @example
  * const schema = optional(z.string(), 'localhost');
- * schema.parse(undefined);   // → 'localhost'
- * schema.parse('');          // → 'localhost'
- * schema.parse('hostname');  // → 'hostname'
+ * schema.parse(undefined); // → 'localhost'
+ * schema.parse(''); // → 'localhost'
+ * schema.parse('hostname'); // → 'hostname'
  */
 const _optional = <S extends z.ZodType>(schema: S, def: z.core.util.NoUndefined<z.core.output<S>>) =>
   z.preprocess((v) => (v === '' ? undefined : v), schema.default(def));

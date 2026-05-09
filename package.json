@@ -2,9 +2,9 @@
   "name": "bun-starter-kit",
   "type": "module",
   "module": "src/index.ts",
-  "imports": {
-    "#pkg/*": "./packages/*"
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "start:dev": "bun --watch run src/index.ts",
     "type:check": "tsc --noEmit",
@@ -22,6 +22,7 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@packages/config": "workspace:*",
     "@eslint/js": "^10.0.1",
     "@types/bun": "^1.3.12",
     "eslint": "^10.2.0",

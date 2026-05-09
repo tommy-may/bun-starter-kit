@@ -3,7 +3,7 @@
   "compilerOptions": {
     // Path Alias
     "paths": {
-      "#pkg/*": ["./packages/*"],
+      "@packages/*": ["./packages/*"],
       "@/*": ["./src/*"]
     }
   },
