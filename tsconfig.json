@@ -3,7 +3,10 @@
   "compilerOptions": {
     // Path Alias
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+
+      "#packages/*": ["./packages/*"],
+      "#packages/js/*": ["./packages/*"]
     }
   },
   "include": ["src", "packages", ".prettierrc.mjs", "eslint.config.mjs"]

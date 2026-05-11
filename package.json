@@ -3,7 +3,8 @@
   "type": "module",
   "module": "src/index.ts",
   "imports": {
-    "#packages/*": "./packages/*"
+    "#packages/*": "./packages/*/index.ts",
+    "#packages/js/*": "./packages/*/index.js"
   },
   "scripts": {
     "start:dev": "bun --watch run src/index.ts",
