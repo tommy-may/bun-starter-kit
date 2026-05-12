@@ -16,6 +16,13 @@ const defaultConfig = [
   js.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
   {
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+      },
+    },
+  },
+  {
     rules: {
       'no-console': [
         'error',
