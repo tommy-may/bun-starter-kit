@@ -1,3 +1,5 @@
+import './config/env';
+
 import { env } from '@/config/env';
 
 // eslint-disable-next-line no-console

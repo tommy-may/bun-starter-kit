@@ -1,12 +1,11 @@
 {
-  "extends": "./packages/config/tsconfig.base",
+  "extends": "./packages/config/typescript-config/tsconfig.base",
   "compilerOptions": {
     // Path Alias
     "paths": {
       "@/*": ["./src/*"],
 
-      "#packages/*": ["./packages/*"],
-      "#packages/js/*": ["./packages/*"]
+      "#pkg/*": ["./packages/*"]
     }
   },
   "include": ["src", "packages", ".prettierrc.mjs", "eslint.config.mjs"]

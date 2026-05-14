@@ -10,5 +10,5 @@
     ".eslintcache": true
   },
 
-  "cSpell.words": ["treeify", "vars"]
+  "cSpell.words": ["dotenv", "eslintcache", "treeify", "vars"]
 }

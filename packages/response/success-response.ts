@@ -1,6 +1,21 @@
-import type { Options, Payload } from './types/success-response';
+import type { Headers } from './types';
 
-import { Status } from './status';
+import { Status, type SuccessStatus } from './status';
+
+type Meta = Record<string, unknown>;
+
+type Payload<D> = {
+  success: true;
+  data: D;
+  meta?: Meta;
+};
+
+type Options<D> = {
+  data: D;
+  meta?: Meta;
+  status?: SuccessStatus;
+  headers?: Headers;
+};
 
 export const ok = <D>(data: D): Payload<D> => ({ success: true, data });
 

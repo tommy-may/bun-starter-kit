@@ -6,7 +6,7 @@ Follow these steps to set up the project locally on your machine.
 
 Make sure you have the following installed on your machine:
 
-- [Bun](https://bun.com) — Fast all-in-one JavaScript Runtime
+- [Bun](https://bun.com) — JavaScript Runtime & Package Manager
 
 ### Installation
 

@@ -1,7 +1,23 @@
 import type { Headers } from './types';
-import type { Options, Payload } from './types/error-response';
 
 import { type ErrorStatus, Status } from './status';
+
+type Payload = {
+  success: false;
+  error: {
+    message?: string;
+    code: string;
+    details?: unknown;
+  };
+};
+
+type Options = {
+  message?: string;
+  code: string;
+  details?: unknown;
+  status?: ErrorStatus;
+  headers?: Headers;
+};
 
 export class ErrorResponse extends Error {
   override name = 'ErrorResponse';
