@@ -3,19 +3,19 @@
     // Environment Settings
     "module": "preserve",
     "target": "esnext",
-    "lib": ["esnext"],
+    "lib": ["ESNext"],
     "types": ["bun"],
 
     // Latest Features
     "allowJs": true,
 
-    // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
-
     // Bundler Mode
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "noEmit": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
 
     // Style Options
     "noImplicitOverride": true,
