@@ -12,7 +12,7 @@
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
 
-    // Bundler mode
+    // Bundler Mode
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "noEmit": true,
